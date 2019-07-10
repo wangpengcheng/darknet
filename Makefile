@@ -1,7 +1,7 @@
-GPU=0
-CUDNN=0
-OPENCV=0
-OPENMP=0
+GPU=1
+CUDNN=1
+OPENCV=1
+OPENMP=1
 DEBUG=0
 
 ARCH= -gencode arch=compute_30,code=sm_30 \
@@ -21,7 +21,7 @@ OBJDIR=./obj/
 
 CC=gcc
 CPP=g++
-NVCC=nvcc 
+NVCC=/usr/local/cuda-9.0/bin/nvcc
 AR=ar
 ARFLAGS=rcs
 OPTS=-Ofast
